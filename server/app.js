@@ -1,7 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
-const csv = require("fast-csv");
 const upload = multer({ dest: "tmp/csv/" });
 
 const { connect } = require("./config/mongoConnection");

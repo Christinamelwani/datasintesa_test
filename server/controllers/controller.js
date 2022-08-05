@@ -46,7 +46,7 @@ class Controller {
           line++;
         })
         .on("end", async function () {
-          res.status(200).json({
+          res.status(201).json({
             status: "Success",
             message:
               "Data successfully inserted, but might take some time to update",
