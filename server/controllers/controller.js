@@ -74,7 +74,10 @@ class Controller {
       });
       data.forEach((el) => {
         output.push({
-          resultTime: el.resultTime,
+          resultTime: {
+            date: el.resultTime.toLocaleDateString(),
+            time: el.resultTime.toLocaleTimeString(),
+          },
           availability: (el.availDur / 900) * 100,
         });
       });
