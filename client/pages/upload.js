@@ -13,7 +13,7 @@ export default function PrivatePage(props) {
   const uploadToServer = async (event) => {
     const body = new FormData();
     body.append("file", file);
-    let response = await fetch("http://localhost:3000/upload", {
+    let response = await fetch("http://localhost:4000/upload", {
       method: "POST",
       body,
     });

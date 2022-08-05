@@ -29,7 +29,7 @@ export default function BarChart({ dataValue, select }) {
   async function getData(query) {
     try {
       let response = await fetch(
-        "http://localhost:3000/graph?" + new URLSearchParams(query)
+        "http://localhost:4000/graph?" + new URLSearchParams(query)
       );
       const data = await response.json();
       let tempData = [];
