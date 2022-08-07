@@ -8,5 +8,6 @@ Cara run:
 3. node app.js
 4. Open new terminal
 5. cd /client
-6. npm run dev
+6. npm i
+7. npm run dev
 
